@@ -80,4 +80,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: developernomis/calculator:latest
+          tags: developernomis/calculator_test:latest
