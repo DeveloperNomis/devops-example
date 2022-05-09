@@ -49,7 +49,7 @@ jobs:
         uses: sfdx-actions/setup-pmd@v1
       
       - name: static code analysis
-        run: pmd -d src/main/java -f text -R pmd_ruleset.xml --force-language xml
+        run: pmd -d src/main/java -f text -R pmd_ruleset.xml -language xml
         
         
         
