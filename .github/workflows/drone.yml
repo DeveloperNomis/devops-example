@@ -49,6 +49,7 @@ jobs:
         uses: sfdx-actions/setup-pmd@v1
       
       - name: static code analysis
+        working-directory: ./cicd-drone
         run: pmd -d src/main/java -f text -R pmd_ruleset.xml -language xml
         
         
