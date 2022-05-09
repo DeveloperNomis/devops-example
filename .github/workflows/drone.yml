@@ -58,6 +58,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    
+      - uses: actions/setup-java@v3
+      
       - name: Publish to DockerHub
         uses: docker/login-action@v1
         with: 
