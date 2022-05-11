@@ -13,9 +13,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   
-env:
-  DOCKERHUB_USERNAME: ${{ env.DOCKERHUB_USERNAME }} # developernomis
-  DOCKERHUB_PASSWORD: ${{ env.DOCKERHUB_PASSWORD }} # 607d4ade-3300-477e-8b0d-3081f09e3f9d
+# env:
+  # DOCKERHUB_USERNAME: ${{ env.DOCKERHUB_USERNAME }} # developernomis
+  # DOCKERHUB_PASSWORD: ${{ env.DOCKERHUB_PASSWORD }} # 607d4ade-3300-477e-8b0d-3081f09e3f9d
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
