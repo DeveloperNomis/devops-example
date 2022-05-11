@@ -83,6 +83,7 @@ jobs:
           password: ${{ env.DOCKERHUB_PASSWORD }}
       - 
         name: Print workdir
+        working-directory: ./cicd-drone/target
         run: pwd
       -
         name: Build and push 
