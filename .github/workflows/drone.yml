@@ -83,12 +83,11 @@ jobs:
           password: ${{ env.DOCKERHUB_PASSWORD }}
       - 
         name: Print workdir
-        working-directory: ./cicd-drone/target
+        working-directory: cicd-drone/target
         run: pwd
       -
         name: Build and push 
         uses: docker/build-push-action@v3
         with:
-          working-directory: ./
           push: true
           tags: developernomis/calculator_test:latest
