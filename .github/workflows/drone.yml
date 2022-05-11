@@ -81,7 +81,9 @@ jobs:
         with: 
           username: ${{ env.DOCKERHUB_USERNAME }}
           password: ${{ env.DOCKERHUB_PASSWORD }}
-          
+      - 
+        name: Print workdir
+        run: pwd
       -
         name: Build and push 
         uses: docker/build-push-action@v3
