@@ -82,6 +82,8 @@ jobs:
           username: ${{ env.DOCKERHUB_USERNAME }}
           password: ${{ env.DOCKERHUB_PASSWORD }}
           
+      - name: change workdir for building Dockerfile
+        working-directory: ./
       -
         name: Build and push 
         uses: docker/build-push-action@v3
